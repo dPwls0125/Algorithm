@@ -11,7 +11,7 @@ string solution(vector<string> participant, vector<string> completion)
     for (auto iter : participant)
     {
         if (m.find(iter) == m.end())
-            m.insert({iter, 1});
+            m.insert(make_pair(iter, 1));
         else
             m[iter]++;
     }
