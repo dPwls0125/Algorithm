@@ -60,14 +60,14 @@ vector<int> solution(string today, vector<string> terms, vector<string> privacie
     return answer;
 }
 
-// int main(void) {
-//     string today = "2022.05.19";
-//     vector<string>p; vector<string>t;
-//     p.push_back("2021.05.02 A"); p.push_back("2021.07.01 B"); 
-//     p.push_back("2022.02.19 C"); p.push_back("2022.02.20 C");
-//     t.push_back("A 6"); t.push_back("B 12"); t.push_back("C 3");
-//     vector<int>s = solution(today,t,p);
-//     for(int i=0; i<s.size(); i++){
-//         cout << s[i]<< " ";
-//     }
-// }
+int main(void) {
+    string today = "2022.05.19";
+    vector<string>p; vector<string>t;
+    p.push_back("2021.05.02 A"); p.push_back("2021.07.01 B"); 
+    p.push_back("2022.02.19 C"); p.push_back("2022.02.20 C");
+    t.push_back("A 6"); t.push_back("B 12"); t.push_back("C 3");
+    vector<int>s = solution(today,t,p);
+    for(int i=0; i<s.size(); i++){
+        cout << s[i]<< " ";
+    }
+}

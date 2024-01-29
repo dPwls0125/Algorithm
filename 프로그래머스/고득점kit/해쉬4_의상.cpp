@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 unordered_map<string, int> m;
-int solution(vector<vector<string>> clothes)
+int solution(vector<vector<string> > clothes)
 {
     int answer = 1;
     for (auto list : clothes)

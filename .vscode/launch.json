@@ -1,6 +1,13 @@
 {
     "configurations": [
         {
+            "type": "java",
+            "name": "가장많이받은선물",
+            "request": "launch",
+            "mainClass": "프로그래머스.Level1.가장많이받은선물",
+            "projectName": "Algorithm_39290acf"
+        },
+        {
             "name": "C/C++: clang++ 활성 파일 빌드 및 디버그",
             "type": "cppdbg",
             "request": "launch",
