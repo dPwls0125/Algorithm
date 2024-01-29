@@ -44,5 +44,13 @@ public class 가장많이받은선물 {
         String[] friends = {"joy", "brad", "alessandro", "conan", "david"};
         String[] gifts = {"alessandro brad", "alessandro joy", "alessandro conan", "david alessandro", "alessandro david"};
         System.out.println(solution(friends,gifts));
+        /*
+         * 누가 더 선물을 많이 받는가?
+        1.	선물을 주고 받음 : 관계에서 선물을 더 많이 준사람이 다음달에 하나 받음
+        2.	선물을 주고받지 않음 : 선물지수가 높은 사람이 선물을 받음
+        선물지수 : 모두에게 준선물 – 모두에게 받은 선물
+        다음달에 선물을 가장 많이 받은 친구의 선물수 
+        선물을 준친구 선물을 받은 친구
+         */
     } 
 }
