@@ -1,0 +1,4 @@
+1
+node:1first: 0second: 0
+node:2first: 0second: 1
+node:3first: 1second: 1
