@@ -13,14 +13,11 @@ void checkInterval(int node, int dot, int end_point) {
     visited[node] = true;
     int count = 0;
     int linked_size = graph[node].size();
-    
     // 구간 생성
     if(linked_size == 1){ //dot인 경우
       answer.push_back(make_pair(node,make_pair(dot,dot))); // leaf_node인 경우
-      if(node != first_node) dot += 1;  // 첫번째 노드인 경우, 다음 도트의 시작점을 그대로 둠.
-    }else if(linked_size > 1) {
-        int new_end = end_point+(linked_size-1);
-        answer.push_back(make_pair(node,make_pair(end_point,new_end)));
+    }else if(linked_size > 1) {;
+        answer.push_back(make_pair(node,make_pair(end_point,end_point+(linked_size-1))));
         dot = end_point + 1;
         end_point = end_point+(linked_size-1);
     } 
@@ -38,9 +35,8 @@ void checkInterval(int node, int dot, int end_point) {
         int next_node =  graph[node][i];
         if(!visited[next_node]){
             checkInterval(next_node,dot,end_point);
-            dot += 1; // 꺅~~~ 매우 중요! 
-        }
-           
+            dot += 1;
+        }     
     }
     return; 
 }
@@ -66,6 +62,7 @@ int main() {
     cout  << is_it_interval << "\n";
     if(is_it_interval == -1 ) return 0; 
     for(int i=0; i<answer.size(); i++){
-        cout << "node:"<<answer[i].first << "first: " << answer[i].second.first << "second: "<<answer[i].second.second << "\n";
+        cout << answer[i].second.first << " " << answer[i].second.second << "\n"; 
+        // cout << "node:"<<answer[i].first << "first: " << answer[i].second.first << "second: "<<answer[i].second.second << "\n";
     }
 }
