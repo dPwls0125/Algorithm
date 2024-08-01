@@ -27,12 +27,9 @@ int solution(vector<int>numbers, int target) {
     return result;
 }
 
-
 int main(void){
-   vector<int>numbers = {4, 1, 2, 1};
+
+   vector<int>numbers = {4,1,2,1};
    int target = 4;
    cout << solution(numbers,target);
-
-
-
 }
