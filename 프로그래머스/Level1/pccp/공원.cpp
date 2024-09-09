@@ -5,7 +5,6 @@
 using namespace std;
 
 bool isItPossible(int i, int j, int mat_index,vector<int> mats,vector<vector<string> > park,int park_width,int park_height){
-    
     // park 인덱스를 벗어나면 불가능 처리 
     if((i+mats[mat_index] >= park_height || j+mats[mat_index] >= park_width)) return false;
     
@@ -27,10 +26,9 @@ int solution(vector<int> mats, vector<vector<string> > park) {
 
     for(int i=0; i<park.size(); i++){
         for(int j=0; j<park[i].size(); j++){
-
             for(int mat = 0; mat < mats.size(); mat++){
                 if(isItPossible(i,j,mat,mats,park,park_width,park_height)){
-                    cout << mats[mat];
+                    // cout << mats[mat];
                     if(mats[mat] > possible_max_mat) possible_max_mat = mats[mat];
                 }
             }
