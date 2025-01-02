@@ -3,7 +3,7 @@ package 프로그래머스.코테;
 import java.util.Arrays;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+// then press Enter. You can now see whitespace characters in your code.  
 public class 닭가슴살 {
 
     public int[] axis_x = {1, 0, -1, 0};
